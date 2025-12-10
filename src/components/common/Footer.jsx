@@ -56,7 +56,7 @@ const Footer = () => {
           <h2 className="text-[18px] text-[#130017] font-[quicksand] font-semibold ">Product tags</h2>
           <div className="flex gap-4 flex-wrap pt-3">
             {productTags.map((tag,index)=>(
-              <button key={index} className="text-[12px] text-[#253D4E] font-[quicksand] font-semibold bg-[#F2F0F0] rounded-xl py-1 px-[9.47px]">{tag}</button>
+              <button key={index} className="text-[12px] text-[#253D4E] font-[quicksand] font-semibold bg-[#F2F0F0] rounded-xl py-1 items-center flex px-[9px]">{tag}</button>
             ))}
             
           </div>
