@@ -125,7 +125,7 @@ export default function RatedProductSwiper() {
               key={idx}
               onClick={() => swiperRef.current?.slideToLoop(idx)}
               className={`cursor-pointer rounded-full ${
-                activeIndex === idx ? "bg-black" : "bg-white"
+              activeIndex === idx ? "bg-black" : "bg-white"
               }`}
             >
               <PaginationBtn />
