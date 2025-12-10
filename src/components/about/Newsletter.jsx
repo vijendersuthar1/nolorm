@@ -7,12 +7,12 @@ const Newsletter = () => {
         <p className='text-[20px] text-[#253D4E] font-medium text-center pt-[15px] max-sm:text-[18px] '>Stay in the loop with everything you need to know.</p>
        <div className='flex gap-6 justify-center max-sm:flex-col'>
          <div className='flex flex-col items-center gap-[7px] mt-8 justify-center'>
-            <input type="email" name="email" id="email" placeholder='Enter your email' className='px-3 border border-[#939393] rounded-lg p-[10.5px_15px_10.5px_15px] max-w-[320px] w-full ' />
+            <input type="email" name="email" id="email" placeholder='Enter your email' className='px-3 border border-[#939393] rounded-lg p-[10.5px_15px_10.5px_15px] max-w-[320px] w-full outline-none' />
             <p className='text-[12px] text-[#253D4E] font-medium'>We care about your data in our privacy policy</p>  
         </div>
         
         <div className='flex items-center pt-2 max-sm:mx-auto'>
-            <button className='max-w-[117px] w-full text-[16px] bg-[#130017] rounded-md text-white p-[10px_18.4px_12px_18.6px] '>Subscribe</button>
+            <button className='max-w-[117px] font-[poppins] w-full text-[16px] bg-[#130017] rounded-md text-white p-[10px_18.4px_12px_18.6px] hover:bg-[#F2F0F0] hover:text-black duration-500 hover:font-medium  cursor-pointer'>Subscribe</button>
         </div>
        </div>
         

@@ -1,12 +1,7 @@
-import { Geist, Geist_Mono, Lato, Poppins, Quicksand } from "next/font/google";
-import "./globals.css";
-import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+import Header from "@/components/common/Header";
+import { Lato, Open_Sans, Poppins, Quicksand } from "next/font/google";
+import "./globals.css";
 
 const quicksand = Quicksand({
   variable: "--font-quicksand-sans",
@@ -19,15 +14,15 @@ const poppins = Poppins({
   weight: ["100","200","300","400","500","600","700", "800","900"]
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 const lato = Lato({
   variable: "--font-lato-sans",
   subsets: ["latin"],
   weight: ["100","300","400","700","900"]
+});
+
+const open_Sans = Open_Sans({
+  variable: "--font-open_Sans",
+  subsets: ["latin"]
 });
 
 export const metadata = {
@@ -39,11 +34,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${quicksand.variable} ${lato.variable} ${poppins.variable} antialiased`}
+        className={`${quicksand.variable} ${lato.variable} ${poppins.variable} ${open_Sans.variable} antialiased`}
       >
         <Header/>
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );

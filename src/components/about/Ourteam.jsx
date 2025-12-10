@@ -1,15 +1,11 @@
-import Image from "next/image";
-import React from "react";
-import { Boy } from "../common/icons";
-import { teamswiper } from "../common/Helper";
 import OurteamSwiper from "./OurteamSwiper";
 
 const Ourteam = () => {
   return (
     <div className="max-w-[1170px] w-full mx-auto px-4">
-      <div className="flex gap-[23.4px] pt-44 max-lg:flex-col max-lg:items-center max-lg:pt-25">
+      <div className="flex gap-[23.4px] pt-44 max-lg:flex-col max-lg:items-center max-lg:pt-10">
         <div>
-          <h2 className="text-[42px] text-[#130017] font-semibold font-[quicksand]">
+          <h2 className="text-[42px] text-[#130017] font-semibold font-[quicksand] max-md:text-center">
             Our Team
           </h2>
           <p className="text-[20px] text-[#253D4E] font-bold font-[quicksand] pt-6  ">

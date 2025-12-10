@@ -1,22 +1,17 @@
 "use client";
-import React, { useRef, useEffect } from "react";
-// Import Swiper React components
+import { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
-
-// import required modules
+import Image from "next/image";
 import { Navigation } from "swiper/modules";
 import { teamswiper } from "../common/Helper";
-import Image from "next/image";
 import { Leftarrow, Rightarrow } from "../common/icons";
 
 export default function OurteamSwiper() {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
-
+console.log(prevRef.current)
   return (
     <div className="max-w-[520px] w-full">
       <div className="flex justify-end gap-1 mb-[39px]">

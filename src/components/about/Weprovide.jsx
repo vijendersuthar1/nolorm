@@ -25,11 +25,11 @@ const Weprovide = () => {
             <h2 className="text-[20px] text-[#253D4E] font-bold font-[quicksand] text-center ">
               {items.title}
             </h2>
-            <p className="text-[14px] text-[#253D4E] font-[lato] text-center max-w-[290px] w-full mx-auto pt-4 leading-[21px]">
+            <p className="text-[14px] text-[#253D4E] font-[lato] text-center  line-clamp-3 max-w-[290px] w-full mx-auto pt-4 leading-[21px]">
               {items.description}
             </p>
             <div key={index} className="flex pt-4 justify-center pb-[25px]">
-              <button className="font-[quicksand] font-bold text-[#130017] bg-[#F2F0F0] rounded-sm px-[15px] py-2.5 cursor-pointer hover:bg-[black] hover:text-[white] transition-[4s] ">
+              <button className="font-[quicksand] font-bold text-[#130017] bg-[#F2F0F0] rounded-sm px-[15px] py-2.5 cursor-pointer hover:bg-[black] hover:text-[white] duration-500 ">
                 Read more
               </button>
             </div>

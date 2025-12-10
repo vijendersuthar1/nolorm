@@ -40,7 +40,7 @@ export default function DetailSwiper() {
          <h2 className="text-[42px] text-[#253D4E] font-semibold max-sm:text-[35px] max-xl:text-center max-sm:pt-5 ">
           Welcome to Lorem ip
         </h2>
-        <ul className="pt-4 flex flex-col gap-2 text-[16px] max-sm:text-[12px] px-4 text-[#253D4E] leading-6 ">
+        <ul className="pt-4 flex flex-col gap-2 text-[16px] max-sm:text-[12px] max-sm:text-center max-sm:px-4 text-[#253D4E] leading-6 ">
           <li className="max-w-[528px] w-full ">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
