@@ -7,7 +7,7 @@ const BestSells = () => {
     return (
         <div className=' max-w-[1194px] w-full px-3 mx-auto mt-[114.71px] '>
             <div className=' flex justify-between'>
-                <h2 className=' text-[42px] leading-[63px] font-semibold text-black '>
+                <h2 className=' text-[42px] leading-[63px] font-semibold text-black  max-lg:text-[34px] max-md:text-[28px] max-sm:text-[24px] '>
                     Daily <span className='text-[rgba(37,61,78,1)]'>Best Sells</span>
 
                 </h2>

@@ -94,7 +94,7 @@ export default function BestSellsSwiper() {
                         <button
                             key={idx}
                             onClick={() => swiperRef.current?.slideTo(idx)}
-                            className={` rounded-full ${activeIndex === idx ? "bg-black" : "bg-white "
+                            className={` rounded-full ${activeIndex === idx ? "bg-blac k" : "bg-white "
                                 }`}
                         ><SoapSwiper /> </button>
                     ))}

@@ -11,12 +11,12 @@ const PopularProducts = () => {
         <div className='mt-[88px] max-w-[1194px] w-full px-3 mx-auto'>
 
             <div className='flex justify-between'>
-                <h2 className='text-[rgba(37,61,78,1)] font-semibold leading-[63px] text-[42px]'>
+                <h2 className='text-[rgba(37,61,78,1)] font-semibold leading-[63px] text-[42px] max-lg:text-[34px] max-md:text-[28px] max-sm:text-[24px]'>
                     Popular <span className='text-black'>Products</span>
 
                 </h2>
 
-                <div className='max-w-[464px] w-full flex justify-between font-bold text-[20px] leading-[30px] items-center'>
+                <div className='max-w-[464px] max-md:max-w-[348px] max-sm:max-w-[326px] w-full flex justify-between font-bold text-[20px] max-lg:text-[18px] max-md:text-[16px] max-sm:text-[13px] leading-[30px] items-center'>
                     <Link href="/">All</Link>
                     <Link href="/">E-liquid</Link>
                     <Link href="/">Disposable vapes</Link>
@@ -26,7 +26,7 @@ const PopularProducts = () => {
             </div>
 
             {/* PRODUCT LIST GRID */}
-            <div className='grid grid-cols-4 gap-5 mt-10'>
+            <div className='grid grid-cols-4 gap-5 mt-10 max-lg:grid-cols-3 max-md:grid-cols-2'>
                 {ProductData.map((items, index) => (
                     <div
                         key={index}

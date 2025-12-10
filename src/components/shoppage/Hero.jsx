@@ -6,9 +6,9 @@ import SoapHeroSwiper from './SoapHeroSwiper'
 
 export const Hero = () => {
   return (
-    <div className='bg-[url(/images/shop-hero-img.png)] bg-center bg-no-repeat'>
-      <div className=' max-w-[1194px] w-full mx-auto px-3 flex justify-between '>
-        <div className='max-w-[773px] flex justify-between  w-full bg-[rgba(217,242,249,1)] p-[48px_8px_23px_24px]'>
+    <div className='bg-[url(/images/shop-hero-img.png)] bg-center bg-no-repeat bg-cover'>
+      <div className=' max-w-[1194px] w-full mx-auto px-3 flex  justify-between max-lg:flex-col max-lg:gap-2 '>
+        <div className='max-w-[773px] flex justify-between max-md:flex-col max-md:gap-3 max-lg:mx-auto  w-full bg-[rgba(217,242,249,1)] p-[48px_8px_23px_24px]'>
 
           <div>
             <h2 className=' text-[56px] text-[rgba(37,61,78,1)] font-bold leading-[61.6px] font-[Quicksand]'>
@@ -24,11 +24,11 @@ export const Hero = () => {
               </button>
             </div>
           </div>
-          <div>
+          <div className=' max-md:mx-auto '>
             <SoapHeroSwiper />
           </div>
         </div>
-        <div className='max-w-[368px] w-full bg-[rgba(242,235,217,1)] pl-[30px]  flex justify-between relative py-[115px]'>
+        <div className='max-w-[368px] w-full bg-[rgba(242,235,217,1)] pl-[30px] max-lg:mx-auto  flex justify-between relative py-[115px]'>
           <div>
             <h2 className=' leading-10 text-[32px] font-semibold text-[rgba(37,61,78,1)] max-w-[210px] w-full'>
               Free shipping

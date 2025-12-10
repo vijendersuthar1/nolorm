@@ -5,7 +5,7 @@ import { ProductRatings } from '../common/icons'
 const Promotions = () => {
     return (
         <div className=' max-w-[1194px] w-full px-3 mx-auto mt-[31px] '>
-            <h3 className=' text-[42px] leading-[63px] font-semibold text-black '>
+            <h3 className=' text-[42px] leading-[63px] font-semibold text-black  max-lg:text-[34px] max-md:text-[28px] max-sm:text-[24px] '>
                 Hot <span className='text-[rgba(37,61,78,1)]'>Promotions </span>
             </h3>
             <div className=' grid grid-cols-3 gap-[30] mt-5'>
@@ -41,9 +41,6 @@ const Promotions = () => {
                                     <p className=' text-[14px] leading-[21px] font-bold text-[rgba(37,61,78,1)]' >
                                         $24.00
                                     </p>
-
-
-
                                 </div>
 
                             </div>
