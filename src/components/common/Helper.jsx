@@ -1,4 +1,4 @@
-import { Clock, Gmail, Location, Mobile } from "./icons";
+import { Clock, Gmail, Location, Mobile, Mail, Phonecall } from "./icons";
 
 export const swiperData = [
   { img: "/image/powder.png" },
@@ -61,9 +61,9 @@ export const reviews = [
 
 export const logodata = [
   { img: <Mobile />, p: "(684) 555-0102" },
-  { img: <Gmail/>, p: "name@email.com" },
-  { img: <Location/>, p: "6391 Elgin St. Celina, Delaware 10299" },
-  { img: <Clock/>, p: "10:00 - 18:00, Mon - Sat" },
+  { img: <Gmail />, p: "name@email.com" },
+  { img: <Location />, p: "6391 Elgin St. Celina, Delaware 10299" },
+  { img: <Clock />, p: "10:00 - 18:00, Mon - Sat" },
 ];
 
 export const FooterLinks = [
@@ -105,9 +105,9 @@ export const FooterLink = [
         link: "/about-us",
       },
       {
-        title:"Contact",
-        link: "/about-us"
-      }
+        title: "Contact",
+        link: "/about-us",
+      },
     ],
   },
   {
@@ -146,7 +146,7 @@ export const FooterLink = [
   },
 ];
 
-// export const productTags = ["kshdf", "jsdhf"];
+// export const productTags = ["kshdf", "jsdhf"]
 
 export const products = [
   {
@@ -155,4 +155,80 @@ export const products = [
   },
 ];
 
-export const productTags = [ "Beans", "Carrots", "Vaping", "Garlic","Mushrooms","E-liquid","Chilli peppers","Broccoli","SKE-Vaping","Cherries","Vaping","Seo tag","Vapinng","Seo tag","vaping","IVG-vaping" ];
+export const productTags = [
+  "Beans",
+  "Carrots",
+  "Vaping",
+  "Garlic",
+  "Mushrooms",
+  "E-liquid",
+  "Chilli peppers",
+  "Broccoli",
+  "SKE-Vaping",
+  "Cherries",
+  "Vaping",
+  "Seo tag",
+  "Vapinng",
+  "Seo tag",
+  "vaping",
+  "IVG-vaping",
+];
+
+export const cards = [
+  { title: "01.", heading: "Visit Feedback", subheading: "" },
+  { title: "02.", heading: "Employer Services", subheading: "" },
+  { title: "03.", heading: "Billing Inquiries", subheading: "" },
+];
+export const contactdata = [
+  {
+    heading: "Office",
+    links: [
+      {
+        img: <Phonecall />,
+        link: "(684) 555-0102",
+      },
+      {
+        img: <Mail />,
+        link: "name@email.com",
+      },
+      {
+        img: <Location />,
+        link: "6391 Elgin St. Celina, Delaware 10299",
+      },
+    ],
+  },
+  {
+    heading: "Studio",
+    links: [
+      {
+        img: <Phonecall />,
+        link: "(684) 555-0102",
+      },
+      {
+        img: <Mail />,
+        link: "name@email.com",
+      },
+      {
+        img: <Location />,
+        link: "6391 Elgin St. Celina, Delaware 10299",
+      },
+    ],
+  },
+  {
+    heading: "Shop",
+    links: [
+      {
+        img: <Phonecall />,
+        link: "(684) 555-0102",
+      },
+      {
+        img: <Mail />,
+        link: "name@email.com",
+      },
+      {
+        img: <Location />,
+        link: "6391 Elgin St. Celina, Delaware 10299",
+      },
+    ],
+  },
+];
