@@ -59,7 +59,7 @@ const DetailsHero = () => {
           <div className="flex gap-3.5 pt-[38.19px]">
             <div className="w-[99.12px] h-[31.87px] flex items-center rounded-[2.81px] border-[0.7px] border-[#939393] px-[7.73px] py-[8.44px]">
               Quantity:
-              <input className="w-[39.55px] pl-1" type="number" value="1" />
+              <input className="w-[39.55px] pl-1" type="number" value="1" readOnly />
             </div>
             <div className="w-[124.42px] h-[31.87px] border-[0.7px] rounded-[2.81px] border-[#939393] px-[7.73px] py-[ 8.44px] flex justify-center items-center">
               <p className="font-bold text-[#130027] font-[Quicksand] leading-[14.76px] text-[9.84px] ">
@@ -69,6 +69,7 @@ const DetailsHero = () => {
                 className="bg-[#EFEFEF] font-bold text-[9.84px] leading-[12.65px] font-[quicksand] text-[#253D4E] pl-0.5 w-[38.17px] h-[14.41px]"
                 type="text"
                 value="150g"
+                readOnly
               />
             </div>
           </div>

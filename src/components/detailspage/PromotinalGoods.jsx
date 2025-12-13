@@ -1,14 +1,12 @@
-"use client"
-import React, { useState } from 'react'
-import { PromotionalGoods } from '../common/Helper'
-import Image from 'next/image'
-import { AddToCard, Productlike, ProductRatings } from '../common/icons'
-import Link from 'next/link'
+"use client";
+import React, { useState } from "react";
+// import { PromotionalGoods } from "../common/Helper";
+import Image from "next/image";
+import { AddToCard, Productlike, ProductRatings } from "../common/icons";
+import Link from "next/link";
 
-
-
-const PromotinalGoods = () => {
-    const [active,setActive] = useState(true);
+const PromotionalGoods = () => {
+  const [active, setActive] = useState(true);
 
   return (
     <>
@@ -18,7 +16,7 @@ const PromotinalGoods = () => {
         </h2>
 
         <div className="grid grid-cols-4  gap-5 max-md:grid-cols-2  max-lg:grid-cols-3 max-sm:grid-cols-1 pt-7 pb-3">
-          {PromotionalGoods.map((items, index) => (
+          {PromotionsData.map((items, index) => (
             <div
               key={index}
               className="border-[#939393] border-[0.7px] rounded-[12.65px] max-w-[186.28px] w-full  relative overflow-hidden max-md:mx-auto "
@@ -97,6 +95,6 @@ const PromotinalGoods = () => {
       </div>
     </>
   );
-}
+};
 
-export default PromotinalGoods
+export default PromotinalGoods;
