@@ -4,10 +4,12 @@
 import React from "react";
 import { cards, contactdata } from "../common/Helper";
 import { Location, Mail, Phonecall } from "../common/icons";
+import PageBanner from "../common/PageBanner";
 
 const Hero = () => {
   return (
     <div className="max-w-[1170px] w-full mx-auto font-[quicksand] px-4">
+      {/* <PageBanner title="Contact Us" /> */}
       <div className="mt-[79px] max-lg:mt-[50px] max-md:mt-[30px]">
         <h2 className="text-center font-semibold text-[42px] leading-[52px] text-[#253D4E] max-md:text-[32px] max-sm:text-[22px]  ">
           Let us know <br /> how we can help you
@@ -42,7 +44,7 @@ const Hero = () => {
       <div className="flex flex-wrap max-lg:justify-center max-lg:text-center gap-5 justify-between items-center mt-24 max-lg:mt-20 max-md:mt-15 max-sm:mt-10">
         {contactdata.map((items, index) => (
           <div key={index}>
-            <h2 className="font-bold text-[32px] max-md:text-[28px] max-sm:text-[20px] text-[#253D4E1]">
+            <h2 className="font-bold text-[32px] max-md:text-[28px] max-sm:text-[20px] text-[#253D4E]">
               {items.heading}
             </h2>
             {items.links.map((i, index) => (
@@ -60,7 +62,7 @@ const Hero = () => {
         <h2 className="font-semibold text-[42px] text-[#253D4E] max-lg:text-center max-md:text-[32px] max-sm:text-[22px]">
           Drop Us a Line
         </h2>
-        <p className="text-#253D4E] text-[14px] max-lg:text-center max-sm:text-[12px]">
+        <p className="text-[#253D4E] text-[14px] max-lg:text-center max-sm:text-[12px]">
           Your email address will not be published. Required fields are marked
         </p>
         <div>
