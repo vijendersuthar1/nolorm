@@ -866,6 +866,7 @@ export const Mail = () => {
   );
 };
 export const ProductRatings = ({ rating }) => {
+
   return (
     <>
       <svg

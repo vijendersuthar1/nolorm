@@ -53,13 +53,10 @@ const Header = () => {
               <div
                 className={`absolute shadow-[0_3px_12px_0_rgba(9,30,66,0.15)] rounded-sm w-[100px] mt-5 text-center z-10 bg-white ${
                   active ? "block" : "hidden"
-                }`}
-              >
-                <p className="hover:text-[#75f8bb] cursor-pointer py-1">Home</p>
-                <p className="hover:text-[#75f8bb] cursor-pointer py-1">Shop</p>
-                <p className="hover:text-[#75f8bb] cursor-pointer py-1">
-                  Details
-                </p>
+                }`}>
+                <p className="hover:text-[#5e5e5e] cursor-pointer py-1">Home</p>
+                <p className="hover:text-[#5e5e5e] cursor-pointer py-1">Shop</p>
+                <p className="hover:text-[#5e5e5e] cursor-pointer py-1">Details</p>
               </div>
             </div>
             <div className="pl-4 flex ">
@@ -85,11 +82,10 @@ const Header = () => {
             <div
               className={`absolute shadow-[0_3px_12px_0_rgba(9,30,66,0.15)] rounded-sm w-[130px] mt-9 mx-3 text-center z-10 bg-white ${
                 categories ? "block" : "hidden"
-              }`}
-            >
-              <p className="hover:text-[#75f8bb] cursor-pointer py-1">Home</p>
-              <p className="hover:text-[#75f8bb] cursor-pointer py-1">Shop</p>
-              <p className="hover:text-[#75f8bb] cursor-pointer py-1">
+              }`}>
+              <p className="hover:text-[#5e5e5e] cursor-pointer py-1">Home</p>
+              <p className="hover:text-[#5e5e5e] cursor-pointer py-1">Shop</p>
+              <p className="hover:text-[#5e5e5e] cursor-pointer py-1">
                 Details
               </p>
             </div>
@@ -125,12 +121,12 @@ const Header = () => {
             </div>
           </div>
           <div className="flex max-sm:flex-wrap max-sm:justify-center gap-7 font-bold text-[#253D4E] text-[14px] leading-[21px] max-md:mx-auto max-md:pt-2 sm:hidden">
-            <p className="hover:text-[#75f8bb] cursor-pointer">Home</p>
-            <p className="hover:text-[#75f8bb] cursor-pointer">About</p>
-            <p className="hover:text-[#75f8bb] cursor-pointer">Shop</p>
-            <p className="hover:text-[#75f8bb] cursor-pointer">Blog</p>
-            <p className="hover:text-[#75f8bb] cursor-pointer">Our team</p>
-            <p className="hover:text-[#75f8bb] cursor-pointer">Contact</p>
+            <p className="hover:text-[#5e5e5e] cursor-pointer">Home</p>
+            <p className="hover:text-[#5e5e5e] cursor-pointer">About</p>
+            <p className="hover:text-[#5e5e5e] cursor-pointer">Shop</p>
+            <p className="hover:text-[#5e5e5e] cursor-pointer">Blog</p>
+            <p className="hover:text-[#5e5e5e] cursor-pointer">Our team</p>
+            <p className="hover:text-[#5e5e5e] cursor-pointer">Contact</p>
           </div>
           <div
             onClick={() => setSidebar(!sidebar)}
@@ -161,26 +157,25 @@ const Header = () => {
           <div
             className={`absolute shadow-[0_3px_12px_0_rgba(9,30,66,0.15)] rounded-sm w-60 top-[21%] max-xl:top-[23%] max-md:top-[20%] text-center z-10 bg-black ${
               browse ? "block" : "hidden"
-            }`}
-          >
-            <p className="hover:text-[#75f8bb] cursor-pointer py-1 text-white">
+            }`}>
+            <p className="hover:text-[#5e5e5e] cursor-pointer py-1 text-white">
               Home
             </p>
-            <p className="hover:text-[#75f8bb] cursor-pointer py-1 text-white">
+            <p className="hover:text-[#5e5e5e] cursor-pointer py-1 text-white">
               Shop
             </p>
-            <p className="hover:text-[#75f8bb] cursor-pointer py-1 text-white">
+            <p className="hover:text-[#5e5e5e] cursor-pointer py-1 text-white">
               Details
             </p>
           </div>
         </div>
         <div className="flex gap-7 font-bold text-[#253D4E] text-[14px] leading-[21px] max-md:mx-auto max-md:pt-2 max-sm:hidden">
-          <p className="hover:text-[#75f8bb] cursor-pointer">Home</p>
-          <p className="hover:text-[#75f8bb] cursor-pointer">About</p>
-          <p className="hover:text-[#75f8bb] cursor-pointer">Shop</p>
-          <p className="hover:text-[#75f8bb] cursor-pointer">Blog</p>
-          <p className="hover:text-[#75f8bb] cursor-pointer">Our team</p>
-          <p className="hover:text-[#75f8bb] cursor-pointer">Contact</p>
+          <p className="hover:text-[#5e5e5e] cursor-pointer">Home</p>
+          <p className="hover:text-[#5e5e5e] cursor-pointer">About</p>
+          <p className="hover:text-[#5e5e5e] cursor-pointer">Shop</p>
+          <p className="hover:text-[#5e5e5e] cursor-pointer">Blog</p>
+          <p className="hover:text-[#5e5e5e] cursor-pointer">Our team</p>
+          <p className="hover:text-[#5e5e5e] cursor-pointer">Contact</p>
         </div>
         <div className="flex max-xl:hidden">
           <div className="flex gap-2 items-center cursor-pointer border-r border-[#939393] pr-5">

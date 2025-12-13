@@ -90,23 +90,23 @@ export const FooterLink = [
     links: [
       {
         title: "About Us",
-        link: "/about-us",
+        url: "/about-us",
       },
       {
         title: "Service",
-        link: "/about-us",
+        url: "/details",
       },
       {
         title: "Case Studies",
-        link: "/about-us",
+        url: "/teampage",
       },
       {
         title: "Blog",
-        link: "/about-us",
+        url: "/about-us",
       },
       {
         title: "Contact",
-        link: "/about-us",
+        url: "/contact",
       },
     ],
   },
@@ -115,15 +115,15 @@ export const FooterLink = [
     links: [
       {
         title: "Become an Affiliate",
-        link: "/about-us",
+        url: "/about-us",
       },
       {
         title: "Advertise your product",
-        link: "/about-us",
+        url: "/details",
       },
       {
         title: "Sell on Market",
-        link: "/about-us",
+        url: "/contact",
       },
     ],
   },
@@ -132,15 +132,15 @@ export const FooterLink = [
     links: [
       {
         title: "Become an Affiliate",
-        link: "/about-us",
+        url: "/about-us",
       },
       {
         title: "Advertise your product",
-        link: "/about-us",
+        url: "/details",
       },
       {
         title: "Sell on Market",
-        link: "/about-us",
+        url: "/contact",
       },
     ],
   },
@@ -232,7 +232,6 @@ export const contactdata = [
     ],
   },
 ];
-
 
 export const descrip = [
   { name: "Calcium 60000 mg" },

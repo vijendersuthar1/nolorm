@@ -1,7 +1,7 @@
 import Footer from "@/components/common/Footer";
-import Header from "@/components/common/Header";
 import { Lato, Open_Sans, Poppins, Quicksand } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/common/Header";
 
 const quicksand = Quicksand({
   variable: "--font-quicksand-sans",
@@ -36,7 +36,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${quicksand.variable} ${lato.variable} ${poppins.variable} ${open_Sans.variable} antialiased`}
       >
-        {/* <Header/> */}
+        <Header/>
         {children}
         <Footer />
       </body>

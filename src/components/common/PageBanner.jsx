@@ -5,7 +5,7 @@ import Link from "next/link";
 const PageBanner = ({ title }) => {
   return (
     <div className="bg-[url('/image/herobg.png')] bg-no-repeat bg-cover">
-      <div className="max-w-[1170px] h-[270px] w-full mx-auto px-4">
+      <div className="max-w-[1170px] h-[270px] w-full mx-auto px-4 mt-4">
         <h1 className="text-[56px] font-bold pt-[61px] text-[#253D4E] max-md:text-[45px] font-[quicksand]">
           {title}
         </h1>

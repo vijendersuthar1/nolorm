@@ -9,7 +9,7 @@ const page = () => {
         <DetailsHero/>
         <DescriptionRew/>
         <RatedProduct/>
-        <PromotinalGoods/>
+        {/* <PromotinalGoods/> */}
     </div>
   )
 }
