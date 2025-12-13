@@ -3,6 +3,7 @@
 import { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
+
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -27,7 +28,17 @@ export default function RatedProductSwiper() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   //  Like button state (prop name = "active")
-  const [active, setActive] = useState(false);
+  const [wishlist, setWishlist] = useState([]);
+
+  const wishlistadded = (index) => {
+      setWishlist ((prev) => {
+        if (prev.includes(index)){
+          return prev.filter((item) => item !== (index))
+        }else{
+         return [...prev,index];
+        }
+      })
+  }
 
   return (
     <div>
@@ -67,34 +78,28 @@ export default function RatedProductSwiper() {
               <div className="h-[231px] flex justify-center items-center relative">
                 <Image src={items.img} alt="product-img" fill />
               </div>
-
               <div className="p-[14.06px] flex flex-col gap-2">
                 <span className="font-[Quicksand] text-[#253D4E] text-[9.84px]">
                   Category
                 </span>
-
                 <h3 className="font-bold font-[quicksand] text-[#253D4E] leading-[21.09px] text-[14.06px]">
                   {items.productname}
                 </h3>
-
                 <div className="flex items-center">
                   {[...Array(5)].map((_, i) => (
-                    <ProductRatings key={i}/>
+                    <ProductRatings key={i} />
                   ))}
                   <p className="text-[#253D4E] text-[9.84px] ml-auto">5</p>
                 </div>
-
                 <p className="text-[#253D4E] text-[9.84px]">Price per kg</p>
                 <div className="flex gap-2">
                   <p className="text-[11.25px] text-[#253D4E]">$24.00</p>
                   <del className="text-[11.25px]">$30.00</del>
                 </div>
-
                 <button className="w-[145.76px] h-[32.33px] flex gap-[5.54px] justify-center items-center rounded-[2.81px] bg-[#130017] text-white font-[Quicksand] font-bold mx-auto cursor-pointer hover:bg-[#939393]">
                   <AddToCard /> Add To Cart
                 </button>
               </div>
-
               {/* product label */}
               <div
                 className={`w-[85px] h-[25px] flex justify-center items-center text-white text-[11.25px] absolute -rotate-45 left-[-25px] top-[7px] ${
@@ -107,12 +112,12 @@ export default function RatedProductSwiper() {
               >
                 {items.productlabel}
               </div>
-
               {/*  like icon */}
               <div
-                onClick={() => setActive(!active)}
-                className="absolute top-[7px] right-[7px] cursor-pointer">
-                <Productlike active={active} />
+                onClick={() => wishlistadded(index)}
+                className="absolute top-[7px] right-[7px] cursor-pointer"
+              >
+                <Productlike like={wishlist.includes(index)} />
               </div>
             </div>
           </SwiperSlide>
@@ -125,7 +130,7 @@ export default function RatedProductSwiper() {
               key={idx}
               onClick={() => swiperRef.current?.slideToLoop(idx)}
               className={`cursor-pointer rounded-full ${
-              activeIndex === idx ? "bg-black" : "bg-white"
+                activeIndex === idx ? "bg-black" : "bg-white"
               }`}
             >
               <PaginationBtn />

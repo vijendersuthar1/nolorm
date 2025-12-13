@@ -4,7 +4,7 @@ import { HomeIcon } from '../common/icons'
 
 export const TeamHero = () => {
   return (
-    <div className='bg-[url(/images/teamHeroBg.png)] bg-no-repeat bg-center'>
+    <div className='bg-[url(/images/team-hero-bg.png)] bg-no-repeat bg-center'>
         <div className='max-w-[1170px] w-full mx-auto px-3  '>
              <div className='flex flex-col gap-5 max-sm:gap-2 pt-[61px] max-md:pt-10 max-sm:pt-7'>
             <h1 className='font-bold font-[quicksand] leading-[84px] max-md:leading-[60px] max-sm:leading-10 text-[#253D4E] text-[56px] max-sm:text-[32px] max-md:text-[40px]'>Our Team</h1>

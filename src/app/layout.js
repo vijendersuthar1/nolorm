@@ -36,7 +36,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${quicksand.variable} ${lato.variable} ${poppins.variable} ${open_Sans.variable} antialiased`}
       >
-        <Header/>
+        {/* <Header/> */}
         {children}
         <Footer />
       </body>

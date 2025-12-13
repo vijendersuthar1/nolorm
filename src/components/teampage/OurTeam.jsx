@@ -13,7 +13,7 @@ export const OurTeam = () => {
             <Image className='px-2 py-3' src="/images/member2.png" alt='second-member' height={281} width={417} />
             <Image className='px-2 py-3' src="/images/member3.png" alt='third-member' height={281} width={417} />
             <Image className='px-2 py-3' src="/images/member4.png" alt='forth-member' height={281} width={417} />
-            <Image className='px-2 py-3' src="/images/member-5.png" alt='fifth-member' height={281} width={417} />
+            <Image className='px-2 py-3' src="/images/member5.png" alt='fifth-member' height={281} width={417} />
             <Image className='px-2 py-3' src="/images/member6.png" alt='sixth-member' height={281} width={417} />
             <Image className='px-2 py-3' src="/images/member7.png" alt='seventh-member' height={281} width={417} />
             <Image className='px-2 py-3' src="/images/member8.png" alt='eighth-member' height={281} width={417} />

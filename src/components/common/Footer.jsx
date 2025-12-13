@@ -14,11 +14,6 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-<<<<<<< HEAD
-    <div></div>
-  )
-}
-=======
     <div className="max-w-[1170px] w-full mx-auto px-4 flex mt-[127px] gap-[87px] max-lg:flex-col max-lg:mt-[30px] max-lg:gap-10">
       <div className="max-w-[262px] w-full">
         <h2 className="text-[42px] font-semibold text-[#000000] font-[quicksand]">
@@ -65,7 +60,6 @@ const Footer = () => {
             ))}
             
           </div>
->>>>>>> d77d333dfe0807c306fc2610fb7a6fec4392ca4d
 
 
 

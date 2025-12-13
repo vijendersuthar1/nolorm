@@ -290,20 +290,26 @@ export const PromotionalGoods = [
     img: "/images/star-booster.png",
     productname: "Star Booster",
     productlabel: "-5%",
+    isLiked: true,
   },
   {
+    title: "description",
     img: "/images/pachan-star.png",
     productname: "Pachan Star Power",
     productlabel: "-5%",
+    isLiked: true,
   },
   {
+    title: "reviews",
     img: "/images/placenta.png",
     productname: "Placenta Star",
     productlabel: "-5%",
+    isLiked: true,
   },
   {
     img: "/images/digestive-powder.png",
     productname: "Pachan Star Digestive Powder",
     productlabel: "-5%",
+    isLiked: true,
   },
 ];

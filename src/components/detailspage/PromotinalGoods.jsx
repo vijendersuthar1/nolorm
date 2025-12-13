@@ -1,23 +1,31 @@
-"use client"
-import React, { useState } from 'react'
-import { PromotionalGoods } from '../common/Helper'
-import Image from 'next/image'
-import { AddToCard, Productlike, ProductRatings } from '../common/icons'
-import Link from 'next/link'
-
-
+"use client";
+import React, { useState } from "react";
+import { PromotionalGoods } from "../common/Helper";
+import Image from "next/image";
+import { AddToCard, Productlike, ProductRatings } from "../common/icons";
+import Link from "next/link";
 
 const PromotinalGoods = () => {
-    const [active,setActive] = useState(true);
+  const [wishlist, setWishlist] = useState([]);
 
+  const addedToWishlist = (index) => {
+    setWishlist((prev) => {
+      if (prev.includes(index)) {
+        // console.log(prev, "prev");
+        return prev.filter((item) => item !== index);
+      } else {
+        return [...prev , index];
+      }
+    });
+  };
+// console.log(wishlist, "wishlist");
   return (
     <>
-      <div className="max-w-[822.46px] w-full mx-auto px-3 ">
+      <div className="max-w-[1170px] w-full mx-auto px-3 ">
         <h2 className="font-[quicksand] font-semibold text-[29.52px] leading-[44.29px] text-[#253D4E] ">
           Promotional Goods
         </h2>
-
-        <div className="grid grid-cols-4  gap-5 max-md:grid-cols-2  max-lg:grid-cols-3 max-sm:grid-cols-1 pt-7 pb-3">
+        <div className="grid grid-cols-4 gap-5 max-md:grid-cols-2  max-lg:grid-cols-3 max-sm:grid-cols-1 pt-7 pb-3">
           {PromotionalGoods.map((items, index) => (
             <div
               key={index}
@@ -25,7 +33,7 @@ const PromotinalGoods = () => {
             >
               <Link
                 href="/details-page"
-                className="h-[183px]  max-w-[184px]  flex justify-center items-center relative"
+                className="h-[183px] max-w-[184px]  flex justify-center items-center relative"
               >
                 <Image src={items.img} alt="5star-dhara" fill />
               </Link>
@@ -42,23 +50,23 @@ const PromotinalGoods = () => {
                 </div>
                 <div className="flex items-center">
                   <div
-                    onClick={() => setActive(!active)}
+                  
                     className="flex cursor-pointer "
                   >
                     <div>
-                      <ProductRatings active={active} />
+                      <ProductRatings/>
                     </div>
                     <div>
-                      <ProductRatings active={active} />{" "}
+                      <ProductRatings/>
                     </div>
                     <div>
-                      <ProductRatings active={active} />
+                      <ProductRatings/>
                     </div>
                     <div>
-                      <ProductRatings active={active} />
+                      <ProductRatings/>
                     </div>
                     <div>
-                      <ProductRatings active={active} />
+                      <ProductRatings/>
                     </div>
                   </div>
                   <p className="text-[#253D4E] font-[lato] text-[9.84px] leading-[14.76px] w-[11.3] flex justify-end ">
@@ -69,7 +77,7 @@ const PromotinalGoods = () => {
                   Price per kg
                 </p>
                 <div className="flex gap-2">
-                  <p className="text-[11.25px]  text-[#253D4E] font-[lato] leading-[16.87px] ">
+                  <p className="text-[11.25px] text-[#253D4E] font-[lato] leading-[16.87px] ">
                     $24.00
                   </p>
                   <del className="font-[lato] text-[11.25px] leading-[16.87px] ">
@@ -86,10 +94,9 @@ const PromotinalGoods = () => {
                 {items.productlabel}
               </div>
               <div
-                onClick={() => setActive(!active)}
-                className="absolute top-[7px] right-[7px] cursor-pointer"
-              >
-                <Productlike active={active} />
+                onClick={() => addedToWishlist(index)}
+                className="absolute top-[7px] right-[7px] cursor-pointer">
+                <Productlike like={wishlist.includes(index)} />
               </div>
             </div>
           ))}
@@ -97,6 +104,6 @@ const PromotinalGoods = () => {
       </div>
     </>
   );
-}
+};
 
-export default PromotinalGoods
+export default PromotinalGoods;

@@ -1,12 +1,23 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
-import { BuyNow, Productlike, ProductRatings, Repost } from "../common/icons";
+import {
+  BuyNow,
+  DecQunatityBtn,
+  IncQunatityBtn,
+  Productlike,
+  ProductRatings,
+  Repost,
+} from "../common/icons";
 
 const DetailsHero = () => {
-  const [active, setActive] = useState(true);
+  const [active, setActive] = useState(1);
+  const [value, setValue] = useState("150g");
+  const [rating,setRating] = useState(0);
+  const [like,setLike] = useState(true);
+
   return (
-    <div className="max-w-[822px] w-full mx-auto px-3 py-[70px] max-md:py-10 max-sm:py-5">
+    <div className="max-w-[1170px] w-full mx-auto px-3 py-[70px] max-md:py-10 max-sm:py-5">
       <div className="flex gap-[27.42px] max-md:flex-col max-md:justify-center items-center ">
         <article>
           <Image
@@ -23,12 +34,23 @@ const DetailsHero = () => {
           </h1>
 
           <div className="flex gap-[5.62px] items-center">
-            <div  className="flex cursor-pointer ">
-              <div  onClick={()=>setActive(!active)}><ProductRatings  active={active} /></div>
-              <div  onClick={()=>setActive(!active)}><ProductRatings active={active}  /> </div>
-              <div  onClick={()=>setActive(!active)}><ProductRatings active={active}  /></div>
-              <div  onClick={()=>setActive(!active)}><ProductRatings  active={active} /></div>
-              <div  onClick={()=>setActive(!active)}><ProductRatings active={active}  /></div>
+            <div className="flex cursor-pointer ">
+              <div onClick={() => setRating(1)}>
+                <ProductRatings rating={rating} index={1}/>
+              </div>
+              <div onClick={() => setRating(2)}>
+                <ProductRatings rating={rating} index={2}/>
+              </div>
+              <div onClick={() => setRating(3)}>
+                <ProductRatings rating={rating} index={3}/>
+              </div>
+              <div onClick={() => setRating(4)}>
+                <ProductRatings rating={rating} index={4}/>
+              </div>
+              <div onClick={() => setRating(5)}>
+                <ProductRatings rating={rating} index={5}/>
+              </div>
+             
             </div>
             <p className="text-[#253D4E] text-[9.84px] font-lato">(5.0)</p>
           </div>
@@ -57,9 +79,25 @@ const DetailsHero = () => {
             <li>Colour : Erythrosine</li>
           </ul>
           <div className="flex gap-3.5 pt-[38.19px]">
-            <div className="w-[99.12px] h-[31.87px] flex items-center rounded-[2.81px] border-[0.7px] border-[#939393] px-[7.73px] py-[8.44px]">
-              Quantity:
-              <input className="w-[39.55px] pl-1" type="number" value="1" />
+            <div className="w-[99.12px] h-[31.87px] flex gap-2 items-center rounded-[2.81px] border-[0.7px] border-[#939393] px-[7.73px] py-[8.44px] ">
+              <p className="w-[45px] text-[#130027] font-bold leading-[14.76px] text-[9.84px] ">
+                {" "}
+                Quantity:
+              </p>
+              {active}
+              <div className="flex flex-col gap-2">
+                <button
+                  onClick={() => setActive(active + 1)}
+                  className="cursor-pointer" >
+                  <IncQunatityBtn />
+                </button>
+                <button
+                  disabled={active === 1}
+                  onClick={() => setActive(active - 1)}
+                  className={`cursor-pointer disabled:cursor-not-allowed`}>
+                  <DecQunatityBtn />
+                </button>
+              </div>
             </div>
             <div className="w-[124.42px] h-[31.87px] border-[0.7px] rounded-[2.81px] border-[#939393] px-[7.73px] py-[ 8.44px] flex justify-center items-center">
               <p className="font-bold text-[#130027] font-[Quicksand] leading-[14.76px] text-[9.84px] ">
@@ -68,26 +106,28 @@ const DetailsHero = () => {
               <input
                 className="bg-[#EFEFEF] font-bold text-[9.84px] leading-[12.65px] font-[quicksand] text-[#253D4E] pl-0.5 w-[38.17px] h-[14.41px]"
                 type="text"
-                value="150g"
+                value={value}
+                onChange={(e) => setValue(e.target.value)}
               />
             </div>
           </div>
+          
           <div className="flex gap-[8.44px] pt-[20.29px]">
             <button
-              onClick={() => setActive(!active)}
+              onClick={() => setLike(!like)}
               className=" cursor-pointer border-[0.7px] border-[#939393] w-[45px] h-[30.93px] flex justify-center items-center rounded-[2.81px]"
             >
-              <Productlike active={active} />
+              <Productlike like={like} />
             </button>
             <button className="cursor-pointer border-[0.7px] border-[#939393] w-[45px] h-[30.93px] flex justify-center items-center rounded-[2.81px] ">
-              <Repost />
+              <Repost/>
             </button>
             <button className="cursor-pointer w-[68.89px] h-[30.93px] bg-[#130017] flex justify-center items-center rounded-[2.81px] font-bold font-[quicksand] text-white text-[9.84px] hover:bg-[#F2F0F0] hover:text-black hover:border duration-300 ">
               Buy now
             </button>
-            <button className="cursor-pointer w-[109.66px] h-[30.93px] bg-[#F2F0F0] flex justify-center items-center rounded-[2.81px] gap-[9.58px] font-bold font-[quicksand] text-[#130017] text-[9.84px] hover:bg-black hover:text-white hover:border duration-300 group   ">
+            <button className="cursor-pointer w-[109.66px] h-[30.93px] bg-[#F2F0F0] flex justify-center items-center rounded-[2.81px] gap-[9.58px] font-bold font-[quicksand] text-[#130017] text-[9.84px] hover:bg-black hover:text-white hover:border duration-300 group ">
               <span>
-                <BuyNow />
+              <BuyNow />
               </span>
               Add To Cart
             </button>

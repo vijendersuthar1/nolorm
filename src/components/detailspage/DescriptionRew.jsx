@@ -1,17 +1,14 @@
 
-
 "use client"
 import React, { useState } from "react";
 import { descrip, review } from "../common/Helper";
-import { ReviwIcon } from "../common/icons";
+// import { ReviwIcon } from "../common/icons";
 
 const DescriptionRew = () => {
-
   const [activeTab, setActiveTab] = useState("description"); 
-
   return (
     <>
-      <div className="max-w-[822.46px] w-full mx-auto px-3">
+      <div className="max-w-[1170px] w-full mx-auto px-3">
         <div className="flex gap-2">
           <button
             onClick={() => setActiveTab("description")}
@@ -32,14 +29,15 @@ const DescriptionRew = () => {
             duration-150 flex justify-center items-center
             ${activeTab === "reviews" ? "bg-[#D9F2F9]" : "hover:bg-[#D9F2F9]"}`}
           >
-            Reviews<ReviwIcon/>
+            Reviews
+            {/* <ReviwIcon/> */}
           </button>
         </div>
 
         {/*CONTENT BOX */}
 
         {activeTab === "description" && (
-          <div className="max-w-[822.47px] w-full mx-auto px-3 rounded-bl-[5.62px] rounded-br-[5.62px] border-[0.7px] border-[#939393]">
+          <div className="max-w-[1170px] w-full mx-auto px-3 rounded-bl-[5.62px] rounded-br-[5.62px] border-[0.7px] border-[#939393]">
             <h3 className="text-[#253D4E] text-[14.06px] font-bold font-[quicksand] pt-[22.7px] pl-3.5">
               Nutritional Value per 1000 ml
             </h3>
@@ -53,7 +51,7 @@ const DescriptionRew = () => {
         )}
 
         {activeTab === "reviews" && (
-          <div className="max-w-[822.47px] w-full mx-auto px-3 rounded-bl-[5.62px] rounded-br-[5.62px] border-[0.7px] border-[#939393]">
+          <div className="max-w-[1170px] w-full mx-auto px-3 rounded-bl-[5.62px] rounded-br-[5.62px] border-[0.7px] border-[#939393]">
             <h3 className="text-[#253D4E] text-[14.06px] font-bold font-[quicksand] pt-[22.7px] pl-3.5">
               Indications :
             </h3>
