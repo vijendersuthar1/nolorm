@@ -12,7 +12,7 @@ const page = () => {
         <Hero/>
        <ShopCategories/>
        <PopularProducts />
-       <BestSells/>
+       {/* <BestSells/> */}
        <Promotions/> 
     </div>
   )

@@ -1,6 +1,7 @@
 import React from 'react'
 // import { PromotionsData } from '../common/Helper'
 import { ProductRatings } from '../common/icons'
+import { PromotionsData } from '../common/Helper'
 
 const Promotions = () => {
     return (
@@ -12,7 +13,7 @@ const Promotions = () => {
                 {/* { PromotionsData.map((item, index)=>(
 
            )} */}
-                {PromotionsData.map((items, index) => (
+                {PromotionsData .map((items, index) => (
                     <div key={index}>
                         <h4 className='text-[32px] leading-10 font-bold'>
                             {items.heading}

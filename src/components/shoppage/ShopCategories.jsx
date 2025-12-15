@@ -1,6 +1,6 @@
 import React from "react";
-// import { categories, exploreMore } from "../common/Helper";
 import Image from "next/image";
+import { categories, exploreMore } from "../common/Helper";
 
 const ShopCategories = () => {
   return (

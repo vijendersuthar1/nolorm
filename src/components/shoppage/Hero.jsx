@@ -3,6 +3,7 @@ import React from 'react'
 // import { Arrow } from '../common/icons'
 import Image from 'next/image'
 import SoapHeroSwiper from './SoapHeroSwiper'
+import { Arrow } from '../common/icons'
 
 export const Hero = () => {
   return (
@@ -25,7 +26,7 @@ export const Hero = () => {
             </div>
           </div>
           <div className=' max-md:mx-auto '>
-            <SoapHeroSwiper />
+            {/* <SoapHeroSwiper /> */}
           </div>
         </div>
         <div className='max-w-[368px] w-full bg-[rgba(242,235,217,1)] pl-[30px] max-lg:mx-auto  flex justify-between relative py-[115px]'>
@@ -39,7 +40,7 @@ export const Hero = () => {
               <p>
                 Shop Now
               </p>
-              {/* <Arrow /> */}
+              <Arrow/>
 
 
             </button>
