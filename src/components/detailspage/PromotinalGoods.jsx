@@ -6,19 +6,19 @@ import { AddToCard, Productlike, ProductRatings } from "../common/icons";
 import Link from "next/link";
 
 const PromotinalGoods = () => {
-  const [wishlist, setWishlist] = useState([]);
+  const [wishlist, setWishlist] = useState([1, 3]);
 
   const addedToWishlist = (index) => {
     setWishlist((prev) => {
       if (prev.includes(index)) {
-        // console.log(prev, "prev");
+        console.log(prev, "prev");
         return prev.filter((item) => item !== index);
       } else {
-        return [...prev , index];
+        return [...prev, index];
       }
     });
   };
-// console.log(wishlist, "wishlist");
+  console.log(wishlist, "wishlist");
   return (
     <>
       <div className="max-w-[1170px] w-full mx-auto px-3 ">
@@ -49,24 +49,21 @@ const PromotinalGoods = () => {
                   </h3>
                 </div>
                 <div className="flex items-center">
-                  <div
-                  
-                    className="flex cursor-pointer "
-                  >
+                  <div className="flex cursor-pointer ">
                     <div>
-                      <ProductRatings/>
+                      <ProductRatings />
                     </div>
                     <div>
-                      <ProductRatings/>
+                      <ProductRatings />
                     </div>
                     <div>
-                      <ProductRatings/>
+                      <ProductRatings />
                     </div>
                     <div>
-                      <ProductRatings/>
+                      <ProductRatings />
                     </div>
                     <div>
-                      <ProductRatings/>
+                      <ProductRatings />
                     </div>
                   </div>
                   <p className="text-[#253D4E] font-[lato] text-[9.84px] leading-[14.76px] w-[11.3] flex justify-end ">
@@ -95,7 +92,8 @@ const PromotinalGoods = () => {
               </div>
               <div
                 onClick={() => addedToWishlist(index)}
-                className="absolute top-[7px] right-[7px] cursor-pointer">
+                className="absolute top-[7px] right-[7px] cursor-pointer"
+              >
                 <Productlike like={wishlist.includes(index)} />
               </div>
             </div>
