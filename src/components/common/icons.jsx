@@ -51,7 +51,7 @@ export const ProductRatings = ({ active }) => {
     </>
   );
 };
-export const Productlike = ({ active }) => {
+export const Productlike = ({ like }) => {
   return (
     <svg
       width="15"
@@ -62,7 +62,7 @@ export const Productlike = ({ active }) => {
     >
       <path
         d="M12.8723 1.02682C11.2314 -0.6465 9.33137 0.0592284 8.15482 0.805546C7.49003 1.22725 6.56915 1.22725 5.90439 0.805546C4.72787 0.0592372 2.82782 -0.646482 1.18697 1.02683C-2.70815 4.99902 3.97165 12.6533 7.02966 12.6533C10.0876 12.6533 16.7674 4.99902 12.8723 1.02682Z"
-        fill={active ? "#F74B81" : "transparent"}
+        fill={like ? "#F74B81" : "transparent"}
         stroke="#F74B81"
         strokeWidth="1"
       />
