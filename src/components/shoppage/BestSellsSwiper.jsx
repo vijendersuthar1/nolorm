@@ -13,6 +13,17 @@ import { ProductData } from "../common/Helper";
 export default function BestSellsSwiper() {
     const swiperRef = useRef(null);
     const [activeIndex, setActiveIndex] = useState(0);
+    const [wishlist,setWishlist] = useState([]);
+    const addedToWishlist=(index)=>{
+        setWishlist((prev)=>{
+            if(prev.includes(index)){
+                return prev.filter((item)=>item!==index);
+            }else{
+                return[...prev,index];
+            }
+        })
+    }
+    
     return (
         <div>
             <div className="flex gap-2.5 justify-end mb-9">
@@ -27,8 +38,8 @@ export default function BestSellsSwiper() {
             <Swiper
                 slidesPerView={4}
                 spaceBetween={30}
-                loop={true}
-                autoplay={{ delay: 3000, disableOnInteraction: false }}
+                // loop={true}
+                // autoplay={{ delay: 3000, disableOnInteraction: false }}
                 onSwiper={(swiper) => (swiperRef.current = swiper)}
                 onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
                 navigation={{
@@ -83,8 +94,9 @@ export default function BestSellsSwiper() {
                                 {items.productlabel}
                             </div>
                             {/* like icon */}
-                            <div className="absolute top-[7px] right-[7px] cursor-pointer">
-                                <Productlike active={false} />
+                            <div onClick={()=> addedToWishlist(index)} className="absolute top-[7px] right-[7px] cursor-pointer">
+
+                                <Productlike like={wishlist.includes(index)} />
                             </div>
                         </div>
                     </SwiperSlide>
