@@ -9,7 +9,7 @@ const BestEmploy = () => {
         <article className='max-w-[490px] w-full flex flex-col gap-6 max-md:gap-4 max-sm:gap-3 max-md:mx-auto'>
             <h2 className='font-bold text-[42px] max-md:text-[32px] max-sm:text-[26px] text-[#253D4E] leading-[50.4px] max-md:leading-[35px]  font-[quicksand] max-w-[369px] w-full #253D4E'>Best Employee of
             <span className='text-[#130017] max-md:text-[32px] max-sm:text-[26px]'> the Month</span></h2>
-            <div className='flex flex-col gap-3 font-[lato] text-[14px] text-[#253D4E] leading-[21px] max-sm:leading-[18px]'>
+            <div className='flex flex-col gap-3 max-md:gap-1.5 font-[lato] text-[14px] text-[#253D4E] leading-[21px] max-sm:leading-[18px]'>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
              incididunt ut labore et dolore magna aliqua.</p>
              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
