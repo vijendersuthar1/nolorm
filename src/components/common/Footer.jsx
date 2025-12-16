@@ -8,21 +8,14 @@ import {
   Youtube,
 } from "./icons";
 import { FooterLink, logodata, productTags } from "./Helper";
-import PageBanner from "./PageBanner";
 import Link from "next/link";
 import Image from "next/image";
 
 const Footer = () => {
   return (
-    <div className="max-w-[1170px] w-full mx-auto px-4 flex mt-[127px] gap-[87px] max-lg:flex-col max-lg:mt-[30px] max-lg:gap-10">
+    <div className="max-w-[1170px] w-full mx-auto px-4 flex mt-[127px] gap-[87px] max-lg:flex-col max-lg:gap-[50px] max-lg:mt-20 max-lg:gap-10">
       <div className="max-w-[262px] w-full">
-        <Image
-          src="/images/Logo.png"
-          alt="logo"
-          width={122}
-          height={71}
-          className="cursor-pointer"
-        />
+        <Image src="/images/logo.png" alt="logo" width={122} height={71}/>
         <div className="flex gap-2 pt-[38px] cursor-pointer">
           <Link href="/">
             {" "}
@@ -53,13 +46,13 @@ const Footer = () => {
         </div>
       </div>
       <div>
-        <div className="grid grid-cols-3 gap-[126px] max-md:grid-cols-2 max-sm:grid-cols-1  max-md:gap-[50px] cursor-pointer  ">
+        <div className="grid grid-cols-3 gap-[126px] max-md:grid-cols-3 max-sm:grid-cols-2 max-lg:gap-[50px] max-md:gap-[50px] cursor-pointer max-sm:gap-2.5  ">
           {FooterLink.map((items, index) => (
             <div key={index} className="flex flex-col gap-2">
-              <h3 className="text-[18px] text-[#253D4E] font-[poppins] font-semibold">
+              <h3 className="text-[18px] text-[#253D4E] font-[poppins] font-semibold max-sm:text-[15px]">
                 {items.heading}
               </h3>
-              <ul className="text-[14px] text-[#253D4E] font-[open_Sans] font-normal leading-[21px] gap-2.5 flex flex-col   ">
+              <ul className="text-[14px] text-[#253D4E] font-[open_Sans] font-normal leading-[21px] gap-2.5 flex flex-col max-sm:text-[13px]  ">
                 {items.links.map((link, i) => {
                   return (
                     <Link

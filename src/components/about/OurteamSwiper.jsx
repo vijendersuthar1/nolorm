@@ -14,14 +14,14 @@ export default function OurteamSwiper() {
 console.log(prevRef.current)
   return (
     <div className="max-w-[520px] w-full">
-      <div className="flex justify-end gap-1 mb-[39px]">
+      <div className="flex justify-end mb-2.5">
         
           <div  ref={prevRef}
-          className="custom-swiper-button-prev px-3 py-1"><Leftarrow/></div>
+          className="custom-swiper-button-prev  py-1 cursor-pointer"><Leftarrow/></div>
         
         
          <div ref={nextRef}
-          className="custom-swiper-button-next px-3 py-1"><Rightarrow/></div>
+          className="custom-swiper-button-next  py-1 cursor-pointer"><Rightarrow/></div>
         
       </div>
 

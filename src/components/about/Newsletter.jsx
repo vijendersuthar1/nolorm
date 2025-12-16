@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Newsletter = () => {
+const Newsletter = ({title}) => {
   return (
     <div className='max-w-[1170px] w-full mx-auto px-4 font-[poppins] mt-[100px] max-lg:mt-[50px] '>
         <h2 className='text-[36px] text-[#253D4E] font-bold text-center max-sm:text-[30px]'>Sign up for our newsletter</h2>

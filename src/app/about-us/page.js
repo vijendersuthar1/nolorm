@@ -15,7 +15,7 @@ const page = () => {
         <Weprovide/>
         <Ourteam/>
         <OnlineStore/>
-        <Newsletter/>
+        <Newsletter title="About Us"/>
     </div>
   )
 }

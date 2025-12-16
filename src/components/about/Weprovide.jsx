@@ -1,19 +1,21 @@
-import React from "react";
+"use client"
+import React, { useState } from "react";
 import { Ticket } from "../common/icons";
 import Image from "next/image";
 import { provided, reviews } from "../common/Helper";
 
 const Weprovide = () => {
+  const [provide,setProvide] = useState(false)
   return (
     <div className="max-w-[1170px] w-full mx-auto px-4 pt-24 max-sm:pt-5">
-      <h2 className="text-[42px] text-[#253D4E] font-semibold font-[quicksand] leading-[63px] text-center max-sm:text-[35px] max-sm:pt-3 ">
+      <h2 className="text-[42px] text-[#253D4E] font-semibold font-[quicksand] leading-[63px] text-center max-sm:text-[30px] max-sm:pt-3 ">
         What We Provide?
       </h2>
-      <div className="pt-28 grid grid-cols-3 gap-[96px_30px] max-xl:grid-cols-2 max-md:grid-cols-1">
+      <div className="pt-28 grid grid-cols-3 gap-[96px_30px] max-lg:grid-cols-2 max-md:grid-cols-2 max-sm:grid-cols-1">
         {provided.map((items, index) => (
           <div
             key={index}
-            className="max-w-[370px] mx-auto w-full border border-1px rounded-lg border-[#E9ECF4]"
+            className={`max-w-[370px] mx-auto w-full border border-1px rounded-lg border-[#E9ECF4] ${provide?"{items.description}":""}`}
           >
             <Image
               className="flex mx-auto -translate-y-12"
@@ -22,14 +24,14 @@ const Weprovide = () => {
               width={108}
               height={108}
             />
-            <h2 className="text-[20px] text-[#253D4E] font-bold font-[quicksand] text-center ">
+            <h2 className="text-[20px] text-[#253D4E] font-bold font-[quicksand] text-center">
               {items.title}
             </h2>
-            <p className="text-[14px] text-[#253D4E] font-[lato] text-center  line-clamp-3 max-w-[290px] w-full mx-auto pt-4 leading-[21px]">
+            <p className="text-[14px] text-[#253D4E] font-[lato] text-center max-md:px-2  line-clamp-3 max-w-[290px] w-full mx-auto pt-4 leading-[21px]">
               {items.description}
             </p>
             <div key={index} className="flex pt-4 justify-center pb-[25px]">
-              <button className="font-[quicksand] font-bold text-[#130017] bg-[#F2F0F0] rounded-sm px-[15px] py-2.5 cursor-pointer hover:bg-[black] hover:text-[white] duration-500 ">
+              <button onClick={()=> setProvide(!provide)} className="font-[quicksand] font-bold text-[#130017] bg-[#F2F0F0] rounded-sm px-[15px] py-2.5 cursor-pointer hover:bg-[black] hover:text-[white] duration-500 ">
                 Read more
               </button>
             </div>
