@@ -3,9 +3,15 @@
 import React from "react";
 
 // import { Arrow } from '../common/icons'
+<<<<<<< HEAD
 import Image from "next/image";
 import SoapHeroSwiper from "./SoapHeroSwiper";
 // import SoapHeroSwiper from './SoapHeroSwiper'
+=======
+import Image from 'next/image'
+import SoapHeroSwiper from './SoapHeroSwiper'
+import { Arrow } from '../common/icons'
+>>>>>>> 39f3e5af3ff543177341f8695f5695d7dbd0ea04
 
 export const Hero = () => {
   return (
@@ -30,8 +36,13 @@ export const Hero = () => {
               </button>
             </div>
           </div>
+<<<<<<< HEAD
           <div className=" max-md:mx-auto ">
             <SoapHeroSwiper />
+=======
+          <div className=' max-md:mx-auto '>
+            {/* <SoapHeroSwiper /> */}
+>>>>>>> 39f3e5af3ff543177341f8695f5695d7dbd0ea04
           </div>
         </div>
         <div className="max-w-[368px] w-full bg-[rgba(242,235,217,1)] pl-[30px] max-lg:mx-auto  flex justify-between relative py-[115px]">
@@ -39,9 +50,19 @@ export const Hero = () => {
             <h2 className=" leading-10 text-[32px] font-semibold text-[rgba(37,61,78,1)] max-w-[210px] w-full">
               Free shipping on order over $100
             </h2>
+<<<<<<< HEAD
             <button className="flex items-center justify-between max-w-[141px] font-bold text-[14px] leading-[21px] w-full p-[11px_20px_13px_20px] bg-black text-white rounded-sm cursor-pointer mt-8">
               <p>Shop Now</p>
               {/* <Arrow /> */}
+=======
+            <button className='flex items-center justify-between max-w-[141px] font-bold text-[14px] leading-[21px] w-full p-[11px_20px_13px_20px] bg-black text-white rounded-sm cursor-pointer mt-8'>
+              <p>
+                Shop Now
+              </p>
+              <Arrow/>
+
+
+>>>>>>> 39f3e5af3ff543177341f8695f5695d7dbd0ea04
             </button>
           </div>
           <div className=" absolute bottom-0 right-0">

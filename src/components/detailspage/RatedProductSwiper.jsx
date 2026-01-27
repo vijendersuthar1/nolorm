@@ -1,8 +1,6 @@
-
 "use client";
 import { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -14,6 +12,7 @@ import { ProductData } from "../common/Helper";
 import {
   Abc,
   AddToCard,
+  AddToCard2,
   Nextarrow,
   PaginationBtn,
   Prewarrow,
@@ -31,14 +30,14 @@ export default function RatedProductSwiper() {
   const [wishlist, setWishlist] = useState([]);
 
   const wishlistadded = (index) => {
-      setWishlist ((prev) => {
-        if (prev.includes(index)){
-          return prev.filter((item) => item !== (index))
-        }else{
-         return [...prev,index];
-        }
-      })
-  }
+    setWishlist((prev) => {
+      if (prev.includes(index)) {
+        return prev.filter((item) => item !== index);
+      } else {
+        return [...prev, index];
+      }
+    });
+  };
 
   return (
     <div>
@@ -74,7 +73,7 @@ export default function RatedProductSwiper() {
       >
         {ProductData.map((items, index) => (
           <SwiperSlide key={index}>
-            <div className="border-[#939393] border-[0.7px] rounded-[12.65px] max-w-[186.28px] w-full relative overflow-hidden max-md:mx-auto">
+            <div className="border-[#939393] border-[0.7px] rounded-[12.65px] gap-4  max-w-[290.28px] w-full relative overflow-hidden max-lg:mx-auto">
               <div className="h-[231px] flex justify-center items-center relative">
                 <Image src={items.img} alt="product-img" fill />
               </div>
@@ -85,19 +84,19 @@ export default function RatedProductSwiper() {
                 <h3 className="font-bold font-[quicksand] text-[#253D4E] leading-[21.09px] text-[14.06px]">
                   {items.productname}
                 </h3>
-                <div className="flex items-center">
+                <div className="flex items-center gap-1">
                   {[...Array(5)].map((_, i) => (
                     <ProductRatings key={i} />
                   ))}
-                  <p className="text-[#253D4E] text-[9.84px] ml-auto">5</p>
+                  <p className="text-[#253D4E] text-[9.84px] ">5</p>
                 </div>
                 <p className="text-[#253D4E] text-[9.84px]">Price per kg</p>
                 <div className="flex gap-2">
                   <p className="text-[11.25px] text-[#253D4E]">$24.00</p>
-                  <del className="text-[11.25px]">$30.00</del>
+                  <del className="text-[11.25px] text-[#253D4E]">$30.00</del>
                 </div>
-                <button className="w-[145.76px] h-[32.33px] flex gap-[5.54px] justify-center items-center rounded-[2.81px] bg-[#130017] text-white font-[Quicksand] font-bold mx-auto cursor-pointer hover:bg-[#939393]">
-                  <AddToCard /> Add To Cart
+                <button className="min-w-[145.76px] w-full h-[32.33px] flex gap-[5.54px] justify-center items-center rounded-[2.81px] bg-[#130017] text-white font-[Quicksand] font-bold  cursor-pointer group text-[9px] hover:bg-white hover:text-black duration-300 border border-[2px]">
+                  <AddToCard2 /> Add To Cart
                 </button>
               </div>
               {/* product label */}
@@ -141,4 +140,3 @@ export default function RatedProductSwiper() {
     </div>
   );
 }
-
