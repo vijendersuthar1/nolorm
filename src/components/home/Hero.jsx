@@ -19,7 +19,8 @@ const Hero = () => {
         {cards.map((items, index) => (
           <div
             key={index}
-            className="max-w-[310px] w-full px-2 max-lg:mx-auto mx-auto ">
+            className="max-w-[310px] w-full px-2 max-lg:mx-auto mx-auto "
+          >
             <p className="text-[32px] text-[#FF0532] font-bold max-md:text-[22px] ">
               {items.title}
             </p>
@@ -39,7 +40,8 @@ const Hero = () => {
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6954.548369141078!2d75.39871929262475!3d29.36226005109641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391161c4ecaa8653%3A0x5e0bcdc55c6afd21!2sSekhupur%20Daroli%2C%20Haryana%20125053%2C%20India!5e0!3m2!1sro!2sro!4v1765261383380!5m2!1sro!2sro"
           allowfullscreen=""
           loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"></iframe>
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe>
       </div>
       <div className="flex flex-wrap max-lg:justify-center max-lg:text-center gap-5 justify-between items-center mt-24 max-lg:mt-20 max-md:mt-15 max-sm:mt-10">
         {contactdata.map((items, index) => (
@@ -50,7 +52,8 @@ const Hero = () => {
             {items.links.map((i, index) => (
               <div
                 key={index}
-                className="flex mt-3 cursor-pointer max-lg:justify-center">
+                className="flex mt-3 cursor-pointer max-lg:justify-center"
+              >
                 <div> {i.img} </div>
                 <p className="pl-[5px] max-md:text-[14px]">{i.link}</p>
               </div>
@@ -92,7 +95,8 @@ const Hero = () => {
           <textarea
             name="textarea"
             id="textarea"
-            className="max-w-[1170px] w-full h-[165px] border border-[#F2F0F0] outline-none mt-6  "></textarea>
+            className="max-w-[1170px] w-full h-[165px] border border-[#F2F0F0] outline-none mt-6  "
+          ></textarea>
           <input
             type="checkbox"
             name="checkbox"
@@ -101,7 +105,8 @@ const Hero = () => {
           />
           <label
             htmlFor="checkbox"
-            className="text-[14px] font-[quicksand] text-[#253D4E] px-2">
+            className="text-[14px] font-[quicksand] text-[#253D4E] px-2"
+          >
             Save my name, email, and website in this browser
           </label>
           <div className="mt-6 max-lg:flex justify-center">

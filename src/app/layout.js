@@ -1,7 +1,7 @@
 import Footer from "@/components/common/Footer";
-import Header from "@/components/common/Header";
 import { Lato, Open_Sans, Poppins, Quicksand } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/common/Header";
 
 const quicksand = Quicksand({
   variable: "--font-quicksand-sans",

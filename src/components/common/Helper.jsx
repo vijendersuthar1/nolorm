@@ -90,23 +90,23 @@ export const FooterLink = [
     links: [
       {
         title: "About Us",
-        link: "/about-us",
+        url: "/about-us",
       },
       {
         title: "Service",
-        link: "/about-us",
+        url: "/details",
       },
       {
         title: "Case Studies",
-        link: "/about-us",
+        url: "/teampage",
       },
       {
         title: "Blog",
-        link: "/about-us",
+        url: "/about-us",
       },
       {
         title: "Contact",
-        link: "/about-us",
+        url: "/contact",
       },
     ],
   },
@@ -115,15 +115,15 @@ export const FooterLink = [
     links: [
       {
         title: "Become an Affiliate",
-        link: "/about-us",
+        url: "/about-us",
       },
       {
         title: "Advertise your product",
-        link: "/about-us",
+        url: "/details",
       },
       {
         title: "Sell on Market",
-        link: "/about-us",
+        url: "/contact",
       },
     ],
   },
@@ -132,15 +132,15 @@ export const FooterLink = [
     links: [
       {
         title: "Become an Affiliate",
-        link: "/about-us",
+        url: "/about-us",
       },
       {
         title: "Advertise your product",
-        link: "/about-us",
+        url: "/details",
       },
       {
         title: "Sell on Market",
-        link: "/about-us",
+        url: "/contact",
       },
     ],
   },
@@ -230,5 +230,85 @@ export const contactdata = [
         link: "6391 Elgin St. Celina, Delaware 10299",
       },
     ],
+  },
+];
+
+export const descrip = [
+  { name: "Calcium 60000 mg" },
+  { name: " Phosphorus 300mg" },
+  { name: "Vitamin D3 150000 IU" },
+  { name: "Vitamin B12 1500 mcg" },
+  { name: "Vitamin H 1000 mcg" },
+  { name: "Cobalt 500 mg" },
+  { name: "Tricholine Citrate 5000 mg" },
+  { name: "Leptadenia reticulata 5000 mg" },
+  { name: "Asparagus racemosus 5000 mg" },
+  { name: "Magnesium sulphate 100 mg" },
+  { name: "Chromium 4200 mcg" },
+];
+
+export const review = [
+  { name: "Better Milk Production" },
+  { name: " Better Health, Stronger Bones" },
+  { name: "Strengthens Immune System Of Udder" },
+  { name: "Replenishes Nutrient Loss In High" },
+  { name: "Yielding Lactating, Pregnant & Growing" },
+  { name: "Animals" },
+];
+
+export const ProductData = [
+  {
+    img: "/images/five-star-dhara.png",
+    productname: "5 Star Dhara",
+    productlabel: "Sale",
+  },
+  {
+    img: "/images/five-star-gel.png",
+    productname: "5 Star Gel",
+    productlabel: "New",
+  },
+  {
+    img: "/images/five-star-min.png",
+    productname: "5 Star Min",
+    productlabel: "",
+  },
+  {
+    img: "/images/vitamin-h.png",
+    productname: "Star H Vitamin H",
+    productlabel: "Hot",
+  },
+  {
+    img: "/images/five-star-dhara.png",
+    productname: "5 Star Dhara",
+    productlabel: "Sale",
+  },
+];
+
+export const PromotionalGoods = [
+  {
+    img: "/images/star-booster.png",
+    productname: "Star Booster",
+    productlabel: "-5%",
+    isLiked: true,
+  },
+  {
+    title: "description",
+    img: "/images/pachan-star.png",
+    productname: "Pachan Star Power",
+    productlabel: "-5%",
+    isLiked: true,
+  },
+  {
+    title: "reviews",
+    img: "/images/placenta.png",
+    productname: "Placenta Star",
+    productlabel: "-5%",
+    isLiked: true,
+  },
+  {
+    img: "/images/digestive-powder.png",
+    productname: "Pachan Star Digestive Powder",
+    productlabel: "-5%",
+    isLiked: true,
   },
 ];
