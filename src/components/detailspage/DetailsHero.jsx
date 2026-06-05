@@ -21,7 +21,7 @@ const DetailsHero = () => {
     <div className="max-w-[1170px] w-full mx-auto px-3 py-[70px] max-md:py-10 max-sm:py-5">
       <div className="flex gap-[27.42px] max-md:flex-col max-md:justify-center items-center ">
         <article>
-          <Image
+          <Imagezx
             className="bg-[#D9F2F9] h-[405px] border-[#939393] border-[0.7px] rounded-[5.62px] "
             src="/images/details-hero.png"
             alt="details-hero"
