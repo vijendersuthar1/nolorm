@@ -1,3 +1,5 @@
+/** @format */
+
 import React from "react";
 import Image from "next/image";
 import { categories, exploreMore } from "../common/Helper";
@@ -8,15 +10,14 @@ const ShopCategories = () => {
       <h2 className=" text-[42px] leading-[63px] font-semibold text-[rgba(37,61,78,1)]  max-lg:text-[34px] max-md:text-[28px] max-sm:text-[24px] ">
         Shop <span className=" text-black">by Categories</span>
       </h2>
-      <div className="mt-6 grid grid-cols-8 max-xl:grid-cols-7 max-lg:grid-cols-6 max-md:grid-cols-5 max-sm:grid-cols-4 gap-4  ">
+      {/* <div className="mt-6 grid grid-cols-8 max-xl:grid-cols-7 max-lg:grid-cols-6 max-md:grid-cols-5 max-sm:grid-cols-4 gap-4  ">
         {categories.map((item, index) => (
           <div
             key={index}
             className={`rounded-lg  w-full p-[11px_15px]`}
             style={{
               backgroundColor: `${item.bg}`,
-            }}
-          >
+            }}>
             <div className="w-full h-[75px] relative overflow-hidden   ">
               <Image src={item.img} alt="#" fill />
             </div>
@@ -34,8 +35,7 @@ const ShopCategories = () => {
             style={{
               backgroundColor: item.bg,
               backgroundImage: `url(${item.bgImg})`,
-            }}
-          >
+            }}>
             <h3 className=" text-[20px] leading-[25px] text-[rgba(37,61,78,1)] font-bold max-w-[233px] w-full">
               {item.heading}
             </h3>
@@ -45,7 +45,7 @@ const ShopCategories = () => {
             </button>
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };

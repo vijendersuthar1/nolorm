@@ -1,3 +1,4 @@
+/** @format */
 import React from "react";
 import { Greater, HomeIcon } from "./icons";
 import Link from "next/link";
@@ -9,7 +10,7 @@ const PageBanner = ({ title }) => {
         <h1 className="text-[56px] font-bold pt-[61px] text-[#253D4E] max-md:text-[45px] font-[quicksand]">
           {title}
         </h1>
-        <div className="flex gap-[] items-center max-w-[159.82px] w-full justify-between pt-5">
+        <div className="flex gap-2 items-center w-full justify-start pt-5">
           <div className="flex gap-1 items-center font-[lato]">
             <HomeIcon />
             <Link href="/" className="text-[#130017] ">
@@ -19,7 +20,9 @@ const PageBanner = ({ title }) => {
           <div className="pt-[5px]">
             <Greater />
           </div>
-          <Link href={`${title.toLowerCase().replace(" ",'-')}`} className="text-[#253D4E]">
+          <Link
+            href={`${title.toLowerCase().replace(/ /g, "-")}`}
+            className="text-[#253D4E]">
             {title}
           </Link>
         </div>

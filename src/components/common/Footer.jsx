@@ -1,3 +1,5 @@
+/** @format */
+
 import React from "react";
 import {
   Facebook,
@@ -65,8 +67,7 @@ const Footer = () => {
                     <Link
                       key={i}
                       href={link.url}
-                      className="hover:text-blue-500 "
-                    >
+                      className="hover:text-blue-500 ">
                       {link.title}
                     </Link>
                   );
@@ -83,8 +84,7 @@ const Footer = () => {
             {productTags.map((tag, index) => (
               <button
                 key={index}
-                className="text-[12px] text-[#253D4E] font-[quicksand] font-semibold bg-[#F2F0F0] rounded-xl py-1 items-center flex px-[9px]"
-              >
+                className="text-[12px] text-[#253D4E] font-[quicksand] font-semibold bg-[#F2F0F0] rounded-xl py-1 items-center flex px-[9px]">
                 {tag}
               </button>
             ))}
